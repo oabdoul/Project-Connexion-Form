@@ -10,6 +10,10 @@
     <form action="submit-login.php" method="POST">
         <h1>Connexion</h1>
         <div>
+            <label for="username">Nom et Prenom</label>
+            <input type="text" name="username" id="username" placeholder="John Doe">
+        </div>
+        <div>
             <label for="email">Adresse Mail</label>
             <input type="email" name="email" id="email" placeholder="abdoul@gmail.com">
         </div>
@@ -17,7 +21,7 @@
             <label for="password">Mots de passe</label>
             <input type="password" name="password" id="password">
         </div>
-        <button>Valider</button>
+        <button type="submit">Valider</button>
     </form>
 </body>
 </html>
