@@ -17,8 +17,10 @@ body{
     min-height: 100vh;
 }
 
+/* Style du formulaire */
+
 form{
-    width: 300px;
+    width: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,6 +33,7 @@ form{
 form h1{
     text-align: center;
     font-size: 1.2rem;
+    text-transform: uppercase;
 }
 
 form div{
@@ -63,6 +66,8 @@ button{
 button:hover{
     cursor: pointer;
 }
+
+/* Message de connexion */
 
 
 
