@@ -1,13 +1,30 @@
 <?php
 
-$username = $_POST['username'];
-$email = $_POST['email'];
-$mpd = $_POST['password'];
+// Inclure des fichiers externes
+include (__DIR__.'/databaseconnect.php');
 
- ?>
+// Vérification que les données sont saisies
+if(isset($_POST["ok"])){
+    $username = $_POST["username"];
+    $email = $_POST["email"];
+    $mdp = $_POST["mdp"];
+
+    // Requête d'insertion des données utilisateur dans la base de données
+    $sqlQuery = "INSERT INTO users(username, email, mdp) VALUES ( :username, :email, :mdp)";
+    $requete = $bdd->prepare($sqlQuery);
+    $requete->execute([
+        'username' => $username,
+        'email' => $email,
+        'mdp' => $mdp
+    ]);
+
+    echo 'Inscription reussie '.$username;
+}
+
+?>
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,9 +34,7 @@ $mpd = $_POST['password'];
 </head>
 <body>
     <div class="container">
-        <h1>Bienvenue</h1>
-        <p>Votre nom : <?php echo $username; ?></p>
-        <p>Votre email: <?php echo $email; ?></p>
-    </div>
+
 </body>
-</html>
+</html> 
+-->
