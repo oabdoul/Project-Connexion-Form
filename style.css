@@ -20,7 +20,7 @@ body{
 /* Style du formulaire */
 
 form{
-    width: 350px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,10 +60,14 @@ button{
     border: 0;
     border-radius: 5px;
     padding: 5px;
-    margin-top: 5px;
+    margin: 5px 0;
+    cursor: pointer;
 }
 
-button:hover{
+
+p a{
+    text-decoration: none;
+    color:#93DC4F;
     cursor: pointer;
 }
 
