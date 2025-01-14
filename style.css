@@ -30,7 +30,7 @@ form{
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
-form h1{
+h1{
     text-align: center;
     font-size: 1.2rem;
     text-transform: uppercase;
@@ -69,6 +69,16 @@ button:hover{
 
 /* Message de connexion */
 
+.container{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
 
 
 
