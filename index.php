@@ -21,7 +21,7 @@
             <label for="mdp">Mots de passe</label>
             <input type="password" name="mdp" id="mdp">
         </div>
-        <button type="submit" name="ok">Valider</button>
+        <button type="submit" name="submit">Valider</button>
         <p>Vous avez déjà un compte ? <a href="connexion.php">Se connecter</a></p>
     </form>
 </body>

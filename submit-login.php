@@ -4,7 +4,7 @@
 include (__DIR__.'/databaseconnect.php');
 
 // Vérification que les données sont saisies
-if(isset($_POST["ok"])){
+if(isset($_POST["submit"])){
     $username = $_POST["username"];
     $email = $_POST["email"];
     $mdp = $_POST["mdp"];
@@ -18,13 +18,12 @@ if(isset($_POST["ok"])){
         'mdp' => $mdp
     ]);
 
-    echo 'Inscription reussie '.$username;
 }
 
 ?>
 
 
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -34,7 +33,9 @@ if(isset($_POST["ok"])){
 </head>
 <body>
     <div class="container">
+        <p><?php echo 'Inscription reussie '.$username;?></p>
+        <p><a href="connexion.php">Connectez-vous</a></p>
+    </div>
 
 </body>
 </html> 
--->
