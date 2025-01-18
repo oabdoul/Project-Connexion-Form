@@ -14,7 +14,7 @@ Dans la page d'inscription, l'utilisateur doit saisir :
 
 Si insctiption reussie, rédirection vers la page d'inscription reussie.
 
-![page inscription reussie](doc/page%20d'inscription%20reussie.png)
+![page inscription reussie|200](doc/page%20d'inscription%20reussie.png)
 
 ## Page de connexion
 
