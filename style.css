@@ -30,6 +30,12 @@ form{
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
+.entete{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 h1{
     text-align: center;
     font-size: 1.2rem;
@@ -54,7 +60,7 @@ div input{
     padding: 2px 5px;
 }
 
-button{
+button, .entete a{
     color: #FFF;
     background: #93DC4F;
     border: 0;
@@ -64,11 +70,19 @@ button{
     cursor: pointer;
 }
 
+.entete a{
+    text-decoration: none;
+    cursor: pointer;
+}
 
 p a{
     text-decoration: none;
     color:#93DC4F;
     cursor: pointer;
+}
+
+.error_message{
+    color: #ff0505;
 }
 
 /* Message de connexion */
